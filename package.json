@@ -2,7 +2,7 @@
   "name": "rehace",
   "version": "0.0.1",
   "description": "ReHaCe - React Habitat Cerebral",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build:lib": "rimraf dist && cross-env BABEL_ENV=production babel src/ --out-dir=lib/ -s",
     "build:docs": "rimraf docs && cross-env NODE_ENV=production webpack --optimize-minimize  --config=demo/webpack.config.js",
@@ -25,13 +25,18 @@
     "eslint-plugin-standard": "^2.1.1",
     "html-webpack-plugin": "^2.28.0",
     "rimraf": "^2.6.1",
-    "webpack": "^2.3.2"
-  },
-  "dependencies": {
+    "webpack": "^2.3.2",
     "cerebral": "2.0.0-b-alpha.133f9d17",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-habitat": "^0.4.2",
     "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "react-habitat": "^0.4.2"
+  },
+  "peerDependencies": {
+    "cerebral": "2.0.0-b-alpha.133f9d17",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }

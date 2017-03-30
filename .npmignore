@@ -1,0 +1,6 @@
+docs/
+demo/
+src/
+.idea
+.eslintrc.json
+.babelrc
