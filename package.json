@@ -1,15 +1,33 @@
 {
   "name": "rehace",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ReHaCe - React Habitat Cerebral",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burning-duck/rehace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/burning-duck/rehace/issues"
+  },
+  "homepage": "https://github.com/burning-duck/rehace",
+  "author": "burning-duck",
+  "contributors": [
+    "Peter Höffling",
+    "Jan Rösler"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "cerebral",
+    "react",
+    "react-habitat"
+  ],
   "scripts": {
+    "prepublishOnly": "npm run build:lib",
     "build:lib": "rimraf dist && cross-env BABEL_ENV=production babel src/ --out-dir=lib/ -s",
     "build:docs": "rimraf docs && cross-env NODE_ENV=production webpack --optimize-minimize  --config=demo/webpack.config.js",
     "start:docs": "rimraf docs && cross-env NODE_ENV=production webpack-dev-server --open --progress --config=demo/webpack.config.js"
   },
-  "author": "burning-duck",
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
