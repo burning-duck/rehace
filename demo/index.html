@@ -6,17 +6,97 @@
 </head>
 <body>
 <h1>ReHaCe Counter Demo #<span data-component="Counter"></span></h1>
+<dl>
+    <dt>Produce HTML like its 1993</dt>
+    <dd>Use a CMS, a static site generator or your imagination to produce this.</dd>
+    <dt>Write Components like its 2017</dt>
+    <dd>Connect the components to a single controller and use a single state across the page.</dd>
+</dl>
+<h2>Demo</h2>
 <p>
-    This is just plain HTML.
+    The current count is <strong><span data-component="Counter"></span></strong>.<br/>
+    You can increase the counter: <span data-component="IncreaseButton"></span>.<br/>
+    You can descrease the counter: <span data-component="DecreaseButton"></span>.<br/>
+    You can pass props to the component, so the current count of <strong><span data-component="Counter"></span></strong>
+    will increase by <span data-component="IncreaseButton" data-n-prop-by="10"></span>.<br/>
 </p>
-<p>
-    The current count is <span data-component="Counter"></span>.
-    You can increase the counter: <span data-component="IncreaseButton"></span>.
-    You can descrease the counter: <span data-component="DecreaseButton"></span>.
-    You can pass props to the component: <span data-component="IncreaseButton" data-n-prop-by="10"></span> so the current count of <span data-component="Counter"></span> will increase by 10.
+<h2>Multiple instances</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Counter</th>
+        <th>IncreaseButton</th>
+        <th>DecreaseButton</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    <tr>
+        <td><span data-component="Counter"></span></td>
+        <td><span data-component="IncreaseButton"></span></td>
+        <td><span data-component="DecreaseButton"></span></td>
+    </tr>
+    </tbody>
+</table>
 </p>
-<p>
-    See the source of this demo: <a href="https://github.com/burning-duck/rehace/tree/master/demo">https://github.com/burning-duck/rehace/tree/master/demo</a>
-</p>
+<h2>Info</h2>
+<ul>
+    <li>
+        <a href="https://github.com/burning-duck/rehace/tree/master/demo">See the source of this demo.</a>
+    </li>
+    <li>
+        <a href="https://github.com/burning-duck/rehace">Visit the ReHaCe repository on Github</a>
+    </li>
+    <li>
+        <a href="http://cerebraljs.com">Read more about Cerebral</a>
+    </li>
+    <li>
+        <a href="https://github.com/DeloitteDigitalAPAC/react-habitat/">Visit React-Habitat on Github.</a>
+    </li>
+</ul>
 </body>
 </html>
