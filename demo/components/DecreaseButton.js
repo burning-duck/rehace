@@ -1,6 +1,6 @@
 import React from 'react'
-import {connect} from 'cerebral/react'
-import {signal} from 'cerebral/tags'
+import { connect } from '@cerebral/react'
+import { signal } from 'cerebral/tags'
 
 const DecreaseButton = connect(
   {

@@ -3,11 +3,9 @@ import ReactHabitat from 'react-habitat'
 /**
  * The Bootstrapper implementation of React-Habitat.
  */
-class RehaceBootstrapper extends ReactHabitat.Bootstrapper {
-  constructor (container) {
+export class RehaceBootstrapper extends ReactHabitat.Bootstrapper {
+  constructor (containerBuilder) {
     super()
-    this.setContainer(container)
+    this.setContainer(containerBuilder.build())
   }
 }
-
-export default RehaceBootstrapper
