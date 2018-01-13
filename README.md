@@ -18,7 +18,7 @@ This allows each component to connect to the same state.
 
 index.js
 ```js
-import Rehace from 'rehace'
+import { Rehace } from 'rehace'
 
 // This is the Cerebral controller
 import controller from './controller'
@@ -28,7 +28,7 @@ import Counter from './components/Counter'
 import IncreaseButton from './components/IncreaseButton'
 import DecreaseButton from './components/DecreaseButton'
 
-export default Rehace({
+export const app =  Rehace(Module{
   controller: controller,
   components: {
     'Counter': Counter,

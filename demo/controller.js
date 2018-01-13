@@ -1,15 +1,15 @@
-import { Controller } from 'cerebral'
+import { Controller, Module } from 'cerebral'
 
-function increase ({state, props}) {
+function increase ({module, props}) {
   const value = props.value || 1
-  state.set('count', state.get('count') + value)
+  module.set('count', module.get('count') + value)
 }
 
-function decrease ({state}) {
-  state.set('count', state.get('count') - 1)
+function decrease ({module}) {
+  module.set('count', module.get('count') - 1)
 }
 
-const controller = Controller({
+const controller = Controller(Module({
   state: {
     count: 0
   },
@@ -17,6 +17,6 @@ const controller = Controller({
     increaseClicked: [increase],
     decreaseClicked: [decrease]
   }
-})
+}))
 
 export default controller
