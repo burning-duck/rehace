@@ -4,6 +4,12 @@ React-Habitat-Cerebral: Components for HTML
 
 Connects React-Habitat components to a single Cerebral controller.
 
+## Install
+
+```
+yarn add @burning-duck/rehace
+```
+
 ## Basic Usage
 
 You can find a simple demo using the [Counter example](http://cerebraljs.com/docs/get_started/counter.html) from the cerebral sitein the [/demo](/demo) folder of this repo.
@@ -18,7 +24,7 @@ This allows each component to connect to the same state.
 
 index.js
 ```js
-import { Rehace } from 'rehace'
+import { Rehace } from '@burning-duck/rehace'
 
 // This is the Cerebral controller
 import controller from './controller'

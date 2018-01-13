@@ -4,3 +4,6 @@ src/
 .idea
 .eslintrc.json
 .babelrc
+*.iml
+*.lock
+*.log
